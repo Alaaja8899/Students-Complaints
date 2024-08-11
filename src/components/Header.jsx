@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className='shadow h-[83px] flex items-center justify-center border border-[rgb(255,0,0)]'>
+    <header className='shadow h-[83px] flex items-center justify-center border-secondColor '>
         <div className="container mx-auto p-6 flex justify-between items-center">
 
             <a href="#!" className="brand">

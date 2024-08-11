@@ -5,6 +5,7 @@ import Complaints from './components/Complaints'
 import Footer from './components/Footer'
 import Contacts from './components/Contacts'
 import ComplaintForm from './components/ComplaintForm'
+import HeroTextComplaints from './components/HeroTextComplaints'
 function App() {
   
   return (
@@ -12,7 +13,8 @@ function App() {
 
 
         <Header/>
-
+        <HeroTextComplaints/>
+        
         <ComplaintForm/>
 
 
