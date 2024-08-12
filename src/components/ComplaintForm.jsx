@@ -75,8 +75,8 @@ function ComplaintForm() {
     const [name ,setName] = useState('')
     const [id , setId] =useState('')
     const [number , setNumber] = useState('')
-    const [foculty , setFoculty] = useState('')
-    const [simister , setSemister] =useState('')
+    const [foculty , setFoculty] = useState(data[0].id)
+    const [simister , setSemister] =useState(data[0].id)
     const [message , setMessage]=useState('')
 
 

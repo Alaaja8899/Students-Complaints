@@ -38,6 +38,7 @@ export const StoreComplaint = (name , id , number , foculty , simister ,message 
   set(messagesRef, {
     timestamp: serverTimestamp(),
     name:name,
+    messageId:messageId,
     id:id , 
     number:number,
     foculty:foculty,
