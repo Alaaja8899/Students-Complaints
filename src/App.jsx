@@ -6,20 +6,34 @@ import Footer from './components/Footer'
 import Contacts from './components/Contacts'
 import ComplaintForm from './components/ComplaintForm'
 import HeroTextComplaints from './components/HeroTextComplaints'
+import Login from './components/Login'
+import ShowComplaints from './components/ShowComplaints'
+import { useComplaintContext } from './context/ComplaintsContextProvider'
 function App() {
-  
+  const {isLogged ,Logging} = useComplaintContext()
   return (
     <div>
 
-
         <Header/>
-        <HeroTextComplaints/>
-        
-        <ComplaintForm/>
+        {Logging && !isLogged && <Login/>}
+        <div className="gap mt-[100px]"></div>
 
 
-        
-      <Complaints/>
+            {
+              isLogged && <ShowComplaints/>
+            }
+      
+
+
+            {
+              !isLogged && !Logging && <div>
+                  <HeroTextComplaints/>    
+                  <ComplaintForm/>
+                  <Complaints/>
+              </div>
+            }
+
+
         <div className="bottom-p bg-[#8888A3] rounded-t-[30%]">
                 
       <Contacts/>

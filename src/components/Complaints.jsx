@@ -1,4 +1,5 @@
 import React from 'react'
+import { useComplaintContext } from '../context/ComplaintsContextProvider'
 
 function Complaints() {
     const demoComplaints =[
@@ -53,9 +54,10 @@ function Complaints() {
 
 
 const Complaint = (props)=>{
+    const {setLogging} = useComplaintContext()
     const {name , count} = props.data
     return(
-        <div 
+        <div onClick={()=>setLogging(true)}
         className='flex items-center justify-center p-6 md:w-[16rem] w-full flex-col border border-[#7777] hover:border-mainColor drop-shadow-xl rounded cursor-pointer gap-2'
         >
 

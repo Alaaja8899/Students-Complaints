@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { StoreComplaint } from '../database'
 
 const data =  [
     {
@@ -70,6 +71,34 @@ const smisters=[
 
 
 function ComplaintForm() {
+
+    const [name ,setName] = useState('')
+    const [id , setId] =useState('')
+    const [number , setNumber] = useState('')
+    const [foculty , setFoculty] = useState('')
+    const [simister , setSemister] =useState('')
+    const [message , setMessage]=useState('')
+
+
+
+        const handleSubmit=(e)=>{
+            e.preventDefault()
+
+            if (name.length > 0 &&id.length > 0 && number.length > 0 &&message.length > 0){
+                const today = new Date();
+                const newDate = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`;
+                const prevDate = localStorage.getItem('date')
+
+                if (newDate == prevDate){
+                    alert("You already sent complaint Try again after 24hours")
+                }else{
+                    StoreComplaint(name , id , number , foculty , simister , message)
+                }
+
+            }
+        }
+
+
   return (
     <div className='container mx-auto p-6 flex md:flex-row flex-col items-center justify-center'>
 
@@ -90,21 +119,21 @@ caalamiga ee somalia SIU
         </div>
 
 
-        <form action=""
+        <form onSubmit={(e)=> handleSubmit(e)}
         className='flex gap-3 items-center justify-center flex-col rounded p-3 md:w-9/12 w-full border '
         >
-            <input
+            <input onChange={(e)=> setName(e.target.value)} 
             className='border border-secondColor p-3 w-full rounded outline-none focus:border-mainColor'
-            type="name" placeholder='Name' />
-            <input
+            type="name" placeholder='Name' required/>
+            <input onChange={(e)=> setId(e.target.value)}
             className='border border-secondColor p-3 w-full rounded outline-none focus:border-mainColor'
-            type="text" placeholder='ID' />
-            <input
+            type="text" placeholder='ID' required/>
+            <input onChange={(e)=> setNumber(e.target.value)}
             className='border border-secondColor p-3 w-full rounded outline-none focus:border-mainColor'
-            type="tel" placeholder='Phone number' />
+            type="tel" placeholder='Phone number' required />
 
             <div className="foculty border-mainColor border w-full items-center justify-center text-center p-3 rounded cursor-pointer">
-                <select
+                <select onChange={(e)=> setFoculty(e.target.value)}
                 className='border w-full h-full cursor-pointer'
                 name="" id="">
                     {data.map(data=> {
@@ -114,7 +143,7 @@ caalamiga ee somalia SIU
             </div>
      
             <div className="smister border-mainColor border w-full items-center justify-center text-center p-3 rounded cursor-pointer">
-                <select
+                <select onChange={(e)=> setSemister(e.target.value)}
                 className='border w-full h-full cursor-pointer'
                 name="" id="">
                     {smisters.map(data=> {
@@ -123,7 +152,7 @@ caalamiga ee somalia SIU
                 </select>
             </div>
 
-            <textarea
+            <textarea required onChange={(e)=> setMessage(e.target.value)}
             className='border border-mainColor p-3 w-full rounded outline-none  resize-none'            
             name="" id=""
             placeholder='Your complaint!..'
