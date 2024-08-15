@@ -4,9 +4,9 @@ import bookImg from '../assets/imgs/book.jpg'
 export default function HeroTextComplaints() {
   return (
     <div
-    className='bg-[#000] w-full relative  container mx-auto mt-10 h-[200px] rounded-[5%] overflow-hidden'
+    className='bg-[#000] w-full relative   mt-10 h-[200px]  overflow-hidden'
     >
-        <div className="absolute border border-[#ffff] w-full h-full flex items-center text-[#fff] justify-between p-3">
+        <div className="absolute border border-[#ffff] w-full h-full flex items-center text-[#fff] justify-between p-3 text-center">
 
                 <div className="side">
                     <h2

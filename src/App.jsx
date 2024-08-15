@@ -34,7 +34,7 @@ function App() {
             }
 
 
-        <div className="bottom-p bg-[#8888A3] rounded-t-[30%]">
+        <div className="bottom-p bg-secondColor rounded-t-[30%] mt-[150px]">
                 
       <Contacts/>
       <Footer/>

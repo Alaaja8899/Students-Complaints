@@ -3,27 +3,27 @@ import { StoreComplaint } from '../database'
 
 const data =  [
     {
-        name:"medicine and surgery" , 
+        name:"Medicine and Murgery" , 
         id: "m&s8899"
     },
     {
-        name: "Education & agriculture", 
+        name: "Education & Agriculture", 
         id: "e&a8899"
     },
     {
-        name: "Engineering & computer " , 
+        name: "Engineering & Computer " , 
         id: "e&c8899"
     },
     {
-        name: "health sciences", 
+        name: "Health Sciences", 
         id: "h&s8899"
     },
     {
-        name: "business & economics", 
+        name: "Business & Economics", 
         id: "b&e8899"
     },
     {
-        name: "sharia & law" , 
+        name: "Sharia & Law" , 
         id: "s&l8899"
     }
 
@@ -32,35 +32,35 @@ const data =  [
 
 const smisters=[
     {
-        name:'simister1',
+        name:'Simister1',
         id:1
     },
     {
-        name:'simister2',
+        name:'Simister2',
         id:2
     },
     {
-        name:'simister3',
+        name:'Simister3',
         id:3
     },
     {
-        name:'simister4',
+        name:'Simister4',
         id:4
     },
     {
-        name:'simister5',
+        name:'Simister5',
         id:5
     },
     {
-        name:'simister6',
+        name:'Simister6',
         id:6
     },
     {
-        name:'simister7',
+        name:'Simister7',
         id:7
     },
     {
-        name:'simister8',
+        name:'Simister8',
         id:8
     }
 ]
@@ -100,7 +100,7 @@ function ComplaintForm() {
 
 
   return (
-    <div className='container mx-auto p-6 flex md:flex-row flex-col items-center justify-center'>
+    <div className='container mx-auto mt-20 p-6 md:p-9 flex md:flex-row flex-col items-center justify-center'>
 
 
         <div className="side md:w-1/2 text-center p-3">
@@ -136,6 +136,7 @@ caalamiga ee somalia SIU
                 <select onChange={(e)=> setFoculty(e.target.value)}
                 className='border w-full h-full cursor-pointer'
                 name="" id="">
+                    <option value={data[0].id}>--Select Your foculty--</option>
                     {data.map(data=> {
                         return <option value={data.id}>{data.name}</option>
                     })}
@@ -146,6 +147,8 @@ caalamiga ee somalia SIU
                 <select onChange={(e)=> setSemister(e.target.value)}
                 className='border w-full h-full cursor-pointer'
                 name="" id="">
+                    <option value={smisters[0].id}>--Select Your Simister--</option>
+
                     {smisters.map(data=> {
                         return <option value={data.id}>{data.name}</option>
                     })}

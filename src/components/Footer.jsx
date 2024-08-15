@@ -6,7 +6,7 @@ function Footer() {
     <div 
     className='w-full p-6'
     >
-        <h2 className="text-center text-[#D9D9D9]">
+        <h2 className="text-center text-mainColor">
         &copy; {currentYear} All Rights Reserved 
         </h2>
     </div>

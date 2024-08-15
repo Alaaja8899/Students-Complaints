@@ -53,16 +53,16 @@ function Login() {
     >
         
         <form action="" onSubmit={(e)=> handleSubmit(e)}
-        className='flex flex-col  border border-mainColor p-3 gap-3 rounded md:w-[30rem] w-full shadow'
+        className='flex flex-col  border border-thirdColor p-3 gap-3 rounded md:w-[30rem] w-full shadow'
         >
             <span onClick={()=> setLogging(false)}
-            className='bg-mainColor text-center cursor-pointer p-3 text-[#fff] rounded'
+            className='bg-thirdColor text-center cursor-pointer p-3 text-[#fff] rounded'
             >
               {`<  back`}
             </span>
             <h2 className='font-medium text-center text-2xl'>Log into admin</h2>
 
-            <p className='text-center text-secondColor'>
+            <p className='text-center text-mainColor'>
               Fill into Username and Password to see the dashbord
             </p>
 
@@ -77,7 +77,7 @@ function Login() {
             className='p-3 rounded w-full border-2 focus:border-mainColor border-secondColor outline-none '
             type="password" name="" id="" placeholder='Password' required/>
             <button type='submit'
-            className='bg-mainColor p-3 w-full text-[#fff] rounded'
+            className='bg-thirdColor p-3 w-full text-[#fff] rounded'
             >Login !</button>
         </form>
 

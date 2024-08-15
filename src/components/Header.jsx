@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useComplaintContext } from '../context/ComplaintsContextProvider'
-
+import logoImg from '../assets/imgs/logo.jpeg'
 const Header = () => {
     const [open , setOpen] = useState(false)
     const {setLogging , Logging , isLogged , setLogged} = useComplaintContext()
@@ -8,9 +8,12 @@ const Header = () => {
     <header className=' fixed  z-20 bg-[#fff] w-full top-0  shadow h-[83px] flex items-center justify-center border-secondColor '>
         <div className="container relative mx-auto p-6 flex justify-between items-center">
 
-            <a href="#!" className="brand">
+            <a href="#!" className="brand flex items-center justify-center gap-3">
+                <img 
+                className='w-[50px] '
+                src={logoImg} alt='siu union logo'/>
                 <h2 className='font-bold text-mainColor md:text-2xl'>
-                SIU STUDENTS UNION
+                SIU STUDENTS <span className='text-thirdColor'>UNION</span>
                 </h2>
             </a>
 
@@ -30,7 +33,7 @@ const Header = () => {
                         setLogging(false)
                     }
                 }}
-                className=' bg-mainColor text-[#fff] py-2 px-6 rounded md:w-fit w-full'
+                className=' bg-thirdColor text-[#fff] py-2 px-6 rounded md:w-fit w-full'
                 >
                     {isLogged ? "Logout":"LogIn"}
                 </button>

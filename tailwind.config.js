@@ -7,8 +7,9 @@ export default {
   theme: {
     extend: {},
     colors:{
-      mainColor : '#12108D',
-      secondColor:'#D9D9D9'
+      mainColor : '#22DD22',
+      secondColor:'#C7F6C7',
+      thirdColor:"#0D98BA"
     }
   },
   plugins: [],

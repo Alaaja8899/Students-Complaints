@@ -122,16 +122,44 @@ const SingleCompalint=(props)=>{
 
     const {name , id , simister , foculty , number , message , messageId} = props.data
 
-    return(
-    <div className=' border md:w-[25rem] w-full p-3 rounded'>
+    const Copy=(item)=>{
+        navigator.clipboard.writeText(item).then(() => alert("Text copied to clipboard!"));
 
-        <h2>
+    }
+
+    return(
+    <div className=' border md:w-[25rem] w-full p-3 rounded border-thirdColor flex flex-col gap-2'>
+
+                <h2 className='text-center  font-medium'>Unsolved Comaplaint!!</h2>
+
+        <h2
+        className='border-mainColor border p-3 font-medium rounded cursor-pointer'
+        onClick={()=> Copy(name)}
+        >
             Name : {name}
         </h2>
-        <h2>Foculty : {foculty}</h2>
-        <h2>ID : {id}</h2>
-        <h2>Simister : {simister}</h2>
-        <p>
+        <h2
+        className='border-mainColor border p-3 font-medium rounded cursor-pointer'
+        onClick={()=> Copy(foculty)}        
+        >Foculty : {foculty}</h2>
+        <h2
+        className='border-mainColor border p-3 font-medium rounded cursor-pointer'
+        onClick={()=> Copy(id)}
+        >ID : {id}</h2>
+        <h2
+        className='border-mainColor border p-3 font-medium rounded cursor-pointer'
+        onClick={()=> Copy(simister)}
+        >Simister : {simister}</h2>
+        <h2
+        className='border-mainColor border p-3 font-medium rounded cursor-pointer'
+        onClick={()=> Copy(number)}
+        >
+            Number : {number}
+        </h2>
+        <p
+        className='border-mainColor border p-3 font-medium rounded cursor-pointer'
+        onClick={()=> Copy(message)}
+        >
             Message : {message}
         </p>
 

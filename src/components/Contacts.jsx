@@ -19,14 +19,14 @@ function Contacts() {
             </h2>
             <div className="socials flex flex-wrap justify-center items-center gap-3 mt-4">
 
-                <a href="#" className="s-icon bg-[#D9D9D9] p-3 flex items-center justify-center rounded ">
-                <box-icon type='logo' name='whatsapp' color={"#12108D"}></box-icon>                    
+                <a href="#" className="s-icon bg-secondColor border-mainColor border p-3 flex items-center justify-center rounded ">
+                <box-icon type='logo' name='whatsapp' color={"#22DD22"}></box-icon>                    
                 </a>
-                <a href="#" className="s-icon bg-[#D9D9D9] p-3 flex items-center justify-center rounded">
-                <box-icon  name='envelope' color={"#12108D"}></box-icon>                    
+                <a href="#" className="s-icon bg-secondColor border-mainColor border p-3 flex items-center justify-center rounded">
+                <box-icon  name='envelope' color={"#22DD22"}></box-icon>                    
                 </a>
-                <a href="#" className="s-icon bg-[#D9D9D9] p-3 flex items-center justify-center rounded">
-                <box-icon  name='phone' type={'solid'} color={"#12108D"}></box-icon>                    
+                <a href="#" className="s-icon bg-secondColor border-mainColor border p-3 flex items-center justify-center rounded">
+                <box-icon  name='phone' type={'solid'} color={"#22DD22"}></box-icon>                    
                 </a>
 
             </div>
