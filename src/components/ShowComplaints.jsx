@@ -60,7 +60,7 @@ function ShowComplaints() {
   
 
     useEffect(()=>{
-        snapshot && console.log(snapshotToArray(snapshot));
+        // snapshot && console.log(snapshotToArray(snapshot));
         
     },[snapshot])
 
