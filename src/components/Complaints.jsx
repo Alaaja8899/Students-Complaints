@@ -53,7 +53,10 @@ function Complaints() {
   
 
   useEffect(() => {
+      
     if (snapshot) {
+
+        // use these values to actually present the right count of focults complaint
         const newValues = snapshotToArray(snapshot).map(f => ({
             id: f.key,
             length: Object.keys(f).length - 1
