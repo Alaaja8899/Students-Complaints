@@ -51,7 +51,7 @@ const Header = () => {
             <span onClick={()=> setOpen(!open)}
             
             className=' bg-secondColor p-1 rounded flex items-center justify-center md:hidden cursor-pointer'>
-            <box-icon name={`${open ? 'x':'menue'}`} color={'#fff'}></box-icon>                
+            <box-icon name={`${open ? 'x':'menu'}`} color={'#fff'}></box-icon>                
             </span>
         </div>
     </header>
