@@ -70,7 +70,7 @@ function ShowComplaints() {
         <div className="menue container mx-auto p-6 flex items-center justify-center flex-col text-center gap-3">
 
         <h2
-        className='text-3xl font-medium border-b-2 border-[red] pb-2'
+        className='text-3xl font-medium border-b-2 border-mainColor pb-2'
         >
             Compalints 
         </h2>
@@ -86,7 +86,7 @@ function ShowComplaints() {
 
                     {data.map(foculty=>{
                         return <button onClick={()=> setFiltered(foculty.id)}
-                        className={`p-3 ${filtered==foculty.id && 'bg-secondColor'} border border-mainColor md:w-fit w-full rounded`}
+                        className={`p-3 ${filtered==foculty.id && 'bg-[rgb(0,0,0,0.1)]'} border border-mainColor md:w-fit w-full rounded`}
                         >
                                 {foculty.name}
                         </button>
@@ -127,8 +127,27 @@ const SingleCompalint=(props)=>{
 
     }
 
+// Original data array
+const data = [
+    { name: "medicine and surgery", id: "m&s8899" },
+    { name: "Education & agriculture", id: "e&a8899" },
+    { name: "Engineering & computer", id: "e&c8899" },
+    { name: "health sciences", id: "h&s8899" },
+    { name: "business & economics", id: "b&e8899" },
+    { name: "sharia & law", id: "s&l8899" }
+];
+
+// Transform the array into an object
+const fc = data.reduce((acc, item) => {
+    acc[item.id] = item.name;
+    return acc;
+}, {});
+
+    
+
+
     return(
-    <div className=' border md:w-[25rem] w-full p-3 rounded border-thirdColor flex flex-col gap-2'>
+    <div className=' border md:w-[25rem] w-full p-3 rounded border-secondColor flex flex-col gap-2'>
 
                 <h2 className='text-center  font-medium'>Unsolved Comaplaint!!</h2>
 
@@ -141,7 +160,7 @@ const SingleCompalint=(props)=>{
         <h2
         className='border-mainColor border p-3 font-medium rounded cursor-pointer'
         onClick={()=> Copy(foculty)}        
-        >Foculty : {foculty}</h2>
+        >Foculty : {fc[foculty]}</h2>
         <h2
         className='border-mainColor border p-3 font-medium rounded cursor-pointer'
         onClick={()=> Copy(id)}
@@ -165,7 +184,7 @@ const SingleCompalint=(props)=>{
 
         <button
         onClick={()=> DeleteComplaint(messageId , foculty)}
-        className='bg-[red] w-full p-3 rounded text-[white]'
+        className='bg-mainColor w-full p-3 rounded text-[white]'
         >
             Delete this complaint !
         </button>

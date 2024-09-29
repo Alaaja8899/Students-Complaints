@@ -29,14 +29,13 @@ function App() {
               !isLogged && !Logging && <div>
                   <HeroTextComplaints/>    
                   <ComplaintForm/>
-                  <Complaints/>
+                  {/* <Complaints/> */}
               </div>
             }
 
 
-        <div className="bottom-p bg-secondColor rounded-t-[30%] mt-[150px]">
+        <div className="bottom-p bg-[rgb(0,0,0,0.1)] mt-[150px]">
                 
-      <Contacts/>
       <Footer/>
 
         </div>

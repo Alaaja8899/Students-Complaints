@@ -10,15 +10,24 @@ const Header = () => {
 
             <a href="#!" className="brand flex items-center justify-center gap-3">
                 <img 
-                className='w-[50px] '
-                src={logoImg} alt='siu union logo'/>
-                <h2 className='font-bold text-mainColor md:text-2xl'>
-                SIU STUDENTS <span className='text-thirdColor'>UNION</span>
-                </h2>
+                className='w-[100px]'
+                src={"https://majces.maahiz.com/wp-content/uploads/2024/08/LOGO-UNIONKA-01-1536x1536.png"} alt='siu union logo'/>
             </a>
 
 
-            <nav className={` md:flex md:relative absolute ${open ? 'flex':'hidden'} top-[100%]  gap-5 items-center justify-center bg-[#fff] md:flex-row flex-col z-10 md:w-fit w-full left-0 border p-3 rounded shadow border-mainColor md:border-none `}>
+            <nav className={` md:flex md:relative absolute ${open ? 'flex':'hidden'} top-[100%]  gap-5 items-center justify-center bg-[#fff] md:flex-row flex-col z-10 md:w-fit w-full left-0 border p-3 rounded  border-mainColor md:border-none `}>
+
+
+
+                <div className="links flex gap-5 md:flex-row flex-col p-3">
+                    <a href="https://majces.maahiz.com/" className='text-mainColor hover:text-secondColor '>HOME</a>
+                    <a href="https://majces.maahiz.com/about/" className='text-mainColor hover:text-secondColor '>ABOUT</a>
+                    <a href="https://majces.maahiz.com/contacts/" className='text-mainColor hover:text-secondColor '>CONTACTS</a>
+                    <a href="https://majces.maahiz.com/activities/" className='text-mainColor hover:text-secondColor '>ACTIVITIES</a>
+                    <a href="https://majces.maahiz.com/news-2/" className='text-mainColor hover:text-secondColor '>NEWS</a>
+                </div>
+
+
                 <a onClick={()=>{
                     setOpen(false)
                     setLogging(true)
@@ -33,7 +42,7 @@ const Header = () => {
                         setLogging(false)
                     }
                 }}
-                className=' bg-thirdColor text-[#fff] py-2 px-6 rounded md:w-fit w-full'
+                className=' bg-secondColor text-[#fff] py-2 px-6 rounded md:w-fit w-full'
                 >
                     {isLogged ? "Logout":"LogIn"}
                 </button>
@@ -42,7 +51,7 @@ const Header = () => {
             <span onClick={()=> setOpen(!open)}
             
             className=' bg-secondColor p-1 rounded flex items-center justify-center md:hidden cursor-pointer'>
-            <box-icon name={`${open ? 'x':'grid'}`} color={'#12108D'}></box-icon>                
+            <box-icon name={`${open ? 'x':'menue'}`} color={'#fff'}></box-icon>                
             </span>
         </div>
     </header>
