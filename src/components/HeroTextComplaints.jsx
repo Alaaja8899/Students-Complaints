@@ -6,7 +6,7 @@ export default function HeroTextComplaints() {
     <div
     className='bg-[#000] w-full relative   mt-10 h-[200px]  overflow-hidden'
     >
-        <div className="absolute border border-[#ffff] w-full h-full flex items-center text-[#fff] justify-between p-3 text-center">
+        <div className="absolute border border-[#ffff] w-full h-full flex flex-col items-center text-[#fff] justify-center p-3 text-center ">
 
                 <div className="side">
                     <h2
@@ -22,9 +22,9 @@ jamacada caalamiga ah ee
  somalia SIU
                     </p>
                 </div>
-                <img 
+                {/* <img 
                 className='md:block hidden'
-                src={bookImg} alt="book image" />
+                src={bookImg} alt="book image" /> */}
 
         </div>
 

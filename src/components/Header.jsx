@@ -19,7 +19,7 @@ const Header = () => {
 
 
 
-                <div className="links flex gap-5 md:flex-row flex-col p-3">
+                <div className="links flex gap-5 md:flex-row flex-col p-3 space-x-10">
                     <a href="https://majces.maahiz.com/" className='text-mainColor hover:text-secondColor '>HOME</a>
                     <a href="https://majces.maahiz.com/about/" className='text-mainColor hover:text-secondColor '>ABOUT</a>
                     <a href="https://majces.maahiz.com/contacts/" className='text-mainColor hover:text-secondColor '>CONTACTS</a>
@@ -32,7 +32,7 @@ const Header = () => {
                     setOpen(false)
                     setLogging(true)
                 }}                
-                href="#!" className='hover:border-b-2 hover:border-mainColor'>Complaints</a>
+                href="#!" className='hover:border-b-2 hover:border-mainColor font-medium'>Complaints</a>
                 <button onClick={()=>{
                     setOpen(false)
                     setLogging(true)

@@ -41,7 +41,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="sec-3">
+        <div className="sec-3 space-y-5">
           <h2 className="now text-mainColor font-bold text-3xl">
             SUBSCRIBE NOW 
           </h2>

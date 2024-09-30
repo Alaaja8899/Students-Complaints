@@ -34,7 +34,7 @@ function App() {
             }
 
 
-        <div className="bottom-p bg-[rgb(0,0,0,0.1)] mt-[150px]">
+        <div className="bottom-p bg-[#DAE4ED] mt-[150px]">
                 
       <Footer/>
 

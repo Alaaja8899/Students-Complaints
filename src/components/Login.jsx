@@ -56,7 +56,7 @@ function Login() {
         className='flex flex-col  border border-thirdColor p-3 gap-3 rounded md:w-[30rem] w-full shadow'
         >
             <span onClick={()=> setLogging(false)}
-            className='bg-thirdColor text-center cursor-pointer p-3 text-[#fff] rounded'
+            className='bg-mainColor text-center cursor-pointer p-3 text-[#fff] rounded'
             >
               {`<  back`}
             </span>

@@ -103,24 +103,10 @@ function ComplaintForm() {
     <div className='container mx-auto mt-20 p-6 md:p-9 flex md:flex-row flex-col items-center justify-center'>
 
 
-        <div className="side md:w-1/2 text-center p-3">
-        <h2
-        className='font-bold text-3xl text-mainColor'
-        >
-        Send us a Message
-        </h2>
-        <p>
-        kusoo gudbi wixii Cabashada oo aad
-qabtid halkan  si dagdag ah ayaa lagu
-xalinaa cabashadaa mudane &marwo 
-midowga ardayda jaamacada 
-caalamiga ee somalia SIU
-        </p>
-        </div>
 
 
         <form onSubmit={(e)=> handleSubmit(e)}
-        className='flex gap-3 items-center justify-center flex-col rounded p-3 md:w-9/12 w-full border '
+        className='flex gap-3 items-center justify-center flex-col rounded p-3  w-full border '
         >
             <input onChange={(e)=> setName(e.target.value)} 
             className='border border-secondColor p-3 w-full rounded outline-none focus:border-mainColor'
