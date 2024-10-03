@@ -23,7 +23,7 @@ function Footer() {
         </div>
         <div className="sec-2"> 
           <h2 className='text-secondColor font-bold text-2xl'>Usefull links</h2>
-          <ul className=' list-disc md:px-0 px-6'>
+          <ul className=' md:px-0 px-6'>
             <li>
               <a href="https://majces.maahiz.com/" className='text-mainColor hover:text-secondColor '>HOME</a>
             </li>

@@ -77,7 +77,7 @@ function Login() {
             className='p-3 rounded w-full border-2 focus:border-mainColor border-secondColor outline-none '
             type="password" name="" id="" placeholder='Password' required/>
             <button type='submit'
-            className='bg-thirdColor p-3 w-full text-[#fff] rounded'
+            className='bg-mainColor p-3 w-full text-[#fff] rounded'
             >Login !</button>
         </form>
 

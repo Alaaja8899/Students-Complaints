@@ -28,11 +28,6 @@ const Header = () => {
                 </div>
 
 
-                <a onClick={()=>{
-                    setOpen(false)
-                    setLogging(true)
-                }}                
-                href="#!" className='hover:border-b-2 hover:border-mainColor font-medium'>Complaints</a>
                 <button onClick={()=>{
                     setOpen(false)
                     setLogging(true)
