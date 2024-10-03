@@ -15,11 +15,11 @@ const Header = () => {
             </a>
 
 
-            <nav className={` md:flex md:relative absolute ${open ? 'flex':'hidden'} top-[100%]  gap-5 items-center justify-center bg-[#fff] md:flex-row flex-col z-10 md:w-fit w-full left-0 border p-3 rounded  border-mainColor md:border-none `}>
+            <nav className={` md:flex md:relative absolute ${open ? 'flex':'hidden'} top-[100%]  gap-5 md:items-center items-start justify-start bg-[#fff] md:flex-row flex-col z-10 md:w-fit w-full left-0 border p-3 rounded  border-mainColor md:border-none `}>
 
 
 
-                <div className="links flex gap-5 md:flex-row flex-col p-3 space-x-10">
+                <div className="links flex gap-5 md:flex-row flex-col ">
                     <a href="https://majces.maahiz.com/" className='text-mainColor hover:text-secondColor '>HOME</a>
                     <a href="https://majces.maahiz.com/about/" className='text-mainColor hover:text-secondColor '>ABOUT</a>
                     <a href="https://majces.maahiz.com/contacts/" className='text-mainColor hover:text-secondColor '>CONTACTS</a>
@@ -42,7 +42,7 @@ const Header = () => {
                         setLogging(false)
                     }
                 }}
-                className=' bg-secondColor text-[#fff] py-2 px-6 rounded md:w-fit w-full'
+                className=' bg-mainColor text-[#fff] py-2 px-6 rounded md:w-fit w-full'
                 >
                     {isLogged ? "Logout":"LogIn"}
                 </button>
