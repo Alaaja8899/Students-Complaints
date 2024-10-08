@@ -4,13 +4,19 @@ import { ref, orderByChild, query } from 'firebase/database';
 import { database, DeleteComplaint } from '../database';
 
 const data = [
-  { name: "medicine and surgery", id: "m&s8899" },
+    {
+        name:"--Select Foculty--",
+        id: null
+    },
+
+  { name: "Medicine", id: "m&s8899" },
   { name: "Education", id: "e8899" },
-  { name: "Agriculture", id: "a8899" },
-  { name: "Engineering & Computer", id: "e&c8899" },
+  { name: "Agriculture and Enviromental Science", id: "a8899" },
+  { name: "Engineering & Computer Technology", id: "e&c8899" },
   { name: "Health Sciences", id: "h&s8899" },
   { name: "Business & Economics", id: "b&e8899" },
-  { name: "Sharia & Law", id: "s&l8899" }
+  { name: "Sharia & Law", id: "s&l8899" },
+  { name: "Arts and Social Science" , id: "a&ss8899"}
 ];
 
 // Transform the array into an object for easy lookup
@@ -39,7 +45,7 @@ function ShowComplaints() {
   return (
     <div>
       <div className="menue container mx-auto p-6 flex items-center justify-center flex-col text-center gap-3">
-        <h2 className="text-3xl font-medium border-b-2 border-mainColor pb-2">
+        <h2 className="text-3xl font-medium text-mainColor  pb-2">
           Complaints
         </h2>
         <p>Halkani waa cabashooyinka ay ardayda soo gudbiyeen kala filtraey adigo gujinaya buttonada hoose</p>

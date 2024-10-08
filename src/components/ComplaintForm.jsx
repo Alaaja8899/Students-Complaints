@@ -3,7 +3,7 @@ import { StoreComplaint } from '../database'
 
 const data =  [
     {
-        name:"Medicine and Murgery" , 
+        name:"Medicine" , 
         id: "m&s8899"
     },
     {
@@ -11,12 +11,12 @@ const data =  [
         id: "e8899"
     },
     {
-        name:"Agriculture",
+        name:"Agriculture and Enviromental Science",
         id: "a8899"
     },
 
     {
-        name: "Engineering & Computer " , 
+        name: "Engineering & Computer Technology" , 
         id: "e&c8899"
     },
     {
@@ -30,6 +30,10 @@ const data =  [
     {
         name: "Sharia & Law" , 
         id: "s&l8899"
+    },
+    {
+        name: "Arts and Social Science" , 
+        id: "a&ss8899"
     }
 
 ]
