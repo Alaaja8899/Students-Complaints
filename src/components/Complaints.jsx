@@ -29,8 +29,8 @@ function Complaints() {
     ];
 
     const [values, setValues] = useState([]);
-
-    const messagesRef = ref(database, `Comaplaints`);  // Corrected the spelling here
+    const [selectedFaculty, setSelectedFaculty] = useState("");
+    const messagesRef = ref(database, `Complaints`);  // Corrected the spelling here
     const queryRef = query(messagesRef);
     const [snapshot] = useObject(queryRef);
 
@@ -68,10 +68,29 @@ function Complaints() {
                 Complaints Of Faculty
             </h2>
 
+            {/* Dropdown for selecting faculty */}
+            <div className="flex justify-center mt-4">
+                <select
+                    className="border p-2 rounded"
+                    value={selectedFaculty}
+                    onChange={(e) => setSelectedFaculty(e.target.value)}
+                >
+                    <option value="">Select a Faculty</option>
+                    {data.map((faculty) => (
+                        <option key={faculty.id} value={faculty.name}>
+                            {faculty.name}
+                        </option>
+                    ))}
+                </select>
+            </div>
+
+            {/* Filtered complaints display */}
             <div className="complaints-container flex flex-wrap gap-3 items-center justify-center mt-4">
-                {demoComplaints.map((data, index) => (
-                    <Complaint key={index} data={data} />
-                ))}
+                {demoComplaints
+                    .filter(complaint => selectedFaculty ? complaint.name === selectedFaculty : true)
+                    .map((data, index) => (
+                        <Complaint key={index} data={data} />
+                    ))}
             </div>
         </div>
     );
