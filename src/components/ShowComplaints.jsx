@@ -5,11 +5,12 @@ import { database, DeleteComplaint } from '../database';
 
 const data = [
   { name: "medicine and surgery", id: "m&s8899" },
-  { name: "Education & agriculture", id: "e&a8899" },
-  { name: "Engineering & computer", id: "e&c8899" },
-  { name: "health sciences", id: "h&s8899" },
-  { name: "business & economics", id: "b&e8899" },
-  { name: "sharia & law", id: "s&l8899" }
+  { name: "Education", id: "e8899" },
+  { name: "Agriculture", id: "a8899" },
+  { name: "Engineering & Computer", id: "e&c8899" },
+  { name: "Health Sciences", id: "h&s8899" },
+  { name: "Business & Economics", id: "b&e8899" },
+  { name: "Sharia & Law", id: "s&l8899" }
 ];
 
 // Transform the array into an object for easy lookup
@@ -100,7 +101,7 @@ const SingleComplaint = (props) => {
         Message : {message}
       </p>
 
-      <button onClick={() => DeleteComplaint(messageId, foculty)} className="bg-mainColor w-full p-3 rounded text-white">
+      <button onClick={() => DeleteComplaint(messageId, foculty)} className="bg-mainColor w-full text-[#fff] p-3 rounded text-white">
         Delete this complaint!
       </button>
     </div>

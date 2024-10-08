@@ -7,9 +7,14 @@ const data =  [
         id: "m&s8899"
     },
     {
-        name: "Education & Agriculture", 
-        id: "e&a8899"
+        name: "Education", 
+        id: "e8899"
     },
+    {
+        name:"Agriculture",
+        id: "a8899"
+    },
+
     {
         name: "Engineering & Computer " , 
         id: "e&c8899"
