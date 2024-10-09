@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useComplaintContext } from '../context/ComplaintsContextProvider'
-import logoImg from '../assets/imgs/logo.jpeg'
+import logoImg from '../assets/imgs/logo.png'
 const Header = () => {
     const [open , setOpen] = useState(false)
     const {setLogging , Logging , isLogged , setLogged} = useComplaintContext()
@@ -10,8 +10,11 @@ const Header = () => {
 
             <a href="#!" className="brand flex items-center justify-center gap-3">
                 <img 
-                className='w-[100px]'
-                src={"https://majces.maahiz.com/wp-content/uploads/2024/08/LOGO-UNIONKA-01-1536x1536.png"} alt='siu union logo'/>
+                className='w-[150px]'
+                src={
+                logoImg
+                }
+                     alt='siu union logo'/>
             </a>
 
 

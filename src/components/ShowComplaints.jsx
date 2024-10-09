@@ -58,7 +58,7 @@ function ShowComplaints() {
           >
             {data.map((faculty) => (
               <option key={faculty.id} value={faculty.id}>
-                {`Foculty of ${faculty.name}`}
+                {faculty.id ? `Foculty of ${faculty.name}`:faculty.name}
               </option>
             ))}
           </select>

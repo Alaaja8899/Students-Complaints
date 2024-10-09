@@ -1,5 +1,5 @@
 import React from 'react'
-
+import logoIMG from '../assets/imgs/logo.png'
 function Footer() {
   return (
     <div className='flex p-6 md:items-center items-start md:justify-between justify-start md:flex-row flex-col gap-4'>
@@ -7,9 +7,10 @@ function Footer() {
   
   
         <div className="sec-1 flex flex-col gap-4">
-          <div className="logo w-[120px]">
+          <div className="logo w-[200px]">
                 <img className='w-full'
-                 src="https://majces.maahiz.com/wp-content/uploads/2024/08/LOGO-UNIONKA-01-1536x1536.png" alt="log siu students union" />
+                src={logoIMG}
+                  alt="log siu students union" />
           </div>
           <p className='text-mainColor'>
           Nasrudiin Compus Hawl-wadaag, Mogadishu Somalia

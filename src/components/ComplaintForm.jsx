@@ -157,7 +157,7 @@ function ComplaintForm() {
                 name="" id="">
                     <option value={data[0].id}>--Select Your foculty--</option>
                     {data.map(data=> {
-                        return <option value={data.id}>{data.name}</option>
+                        return <option value={data.id}>{`Foculty of ${data.name}`}</option>
                     })}
                 </select>
             </div>
