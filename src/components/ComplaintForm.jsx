@@ -71,7 +71,31 @@ const smisters=[
     {
         name:'Simister8',
         id:8
-    }
+    },
+    {
+        name:'Simister9',
+        id:9
+    },
+    {
+        name:'Simister10',
+        id:10
+    },
+    {
+        name:'Simister11',
+        id:11
+    },
+    {
+        name:'Simister12',
+        id:12
+    },
+    {
+        name:'Simister13',
+        id:13
+    },
+    {
+        name:'Simister14',
+        id:14
+    },
 ]
 
 
