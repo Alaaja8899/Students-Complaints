@@ -26,19 +26,19 @@ function Footer() {
           <h2 className='text-secondColor font-bold text-2xl'>Usefull links</h2>
           <ul className=' md:px-0 px-6'>
             <li>
-              <a href="https://majces.maahiz.com/" className='text-mainColor hover:text-secondColor '>HOME</a>
+              <a href="https://majsi.siu.edu.so/" className='text-mainColor hover:text-secondColor '>HOME</a>
             </li>
             <li>
-              <a href="https://majces.maahiz.com/about/" className='text-mainColor hover:text-secondColor '>ABOUT</a>
+              <a href="https://majsi.siu.edu.so/about/" className='text-mainColor hover:text-secondColor '>ABOUT</a>
             </li>
             <li>
-              <a href="https://majces.maahiz.com/contacts/" className='text-mainColor hover:text-secondColor '>CONTACTS</a>
+              <a href="https://majsi.siu.edu.so/contacts/" className='text-mainColor hover:text-secondColor '>CONTACTS</a>
             </li>
             <li>
-              <a href="https://majces.maahiz.com/activities/" className='text-mainColor hover:text-secondColor '>ACTIVITIES</a>
+              <a href="https://majsi.siu.edu.so/activities/" className='text-mainColor hover:text-secondColor '>ACTIVITIES</a>
             </li>
             <li>
-              <a href="https://majces.maahiz.com/news-2/" className='text-mainColor hover:text-secondColor '>NEWS</a>
+              <a href="https://majsi.siu.edu.so/news-2/" className='text-mainColor hover:text-secondColor '>NEWS</a>
             </li>
           </ul>
         </div>
