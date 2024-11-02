@@ -186,7 +186,7 @@ function ComplaintForm() {
         <button
         className='bg-mainColor text-[#ffff] w-full p-3 rounded'
 >
-            Send Comaplaint !
+            Submit
         </button>
 
 
